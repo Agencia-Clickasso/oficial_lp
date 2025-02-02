@@ -73,8 +73,10 @@ export function CaseStudies() {
                   <Image
                     src={study.image || "/placeholder.svg"}
                     alt={study.title}
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                    loader={({ src, width, quality }) => `${src}?w=${width}&q=${quality || 75}`}
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="text-white font-medium">Visitar site</span>

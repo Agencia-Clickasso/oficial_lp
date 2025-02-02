@@ -16,6 +16,9 @@ export function Nav() {
           <Link href="#" className="text-gray-600 hover:text-[#9333E9]">
             Cases
           </Link>
+          <Link href="/blog" className="text-gray-600 hover:text-[#9333E9]">
+            Blog
+          </Link>
           <Link href="#" className="text-gray-600 hover:text-[#9333E9]">
             Conteúdos
           </Link>

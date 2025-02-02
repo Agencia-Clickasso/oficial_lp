@@ -3,13 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["v0.blob.com"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "v0.blob.com",
-        pathname: "/**",
-      },
-    ],
+    loader: "custom",
+    loaderFile: "./imageLoader.js",
   },
   typescript: {
     ignoreBuildErrors: true,

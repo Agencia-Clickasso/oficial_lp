@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Instagram, Facebook, Linkedin, Youtube, Mail, Phone } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
@@ -42,14 +43,11 @@ export function Footer() {
                 <Phone className="w-4 h-4" />
                 (11) 99559-7242
               </Link>
-              <Link
-                href="https://calendly.com/matheus-puppe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#9333E9] hover:bg-[#7928CA]"
-              >
-                Agendar reunião
-              </Link>
+              <Button asChild className="bg-[#9333E9] hover:bg-[#7928CA] text-white">
+                <Link href="https://calendly.com/matheus-puppe" target="_blank" rel="noopener noreferrer">
+                  Agendar reunião
+                </Link>
+              </Button>
             </div>
           </div>
 
@@ -63,8 +61,11 @@ export function Footer() {
               <Link href="#" className="block text-gray-600 hover:text-[#9333E9]">
                 Cases
               </Link>
-              <Link href="#" className="block text-gray-600 hover:text-[#9333E9]">
+              <Link href="/blog" className="block text-gray-600 hover:text-[#9333E9]">
                 Blog
+              </Link>
+              <Link href="#" className="block text-gray-600 hover:text-[#9333E9]">
+                Conteúdos
               </Link>
               <Link href="#" className="block text-gray-600 hover:text-[#9333E9]">
                 Empresa
