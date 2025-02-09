@@ -44,6 +44,16 @@ const caseStudies: CaseStudy[] = [
     slug: "jussara-massoterapeuta",
     website: "https://jussaramassoterapeuta.com.br",
   },
+  {
+    title: "Purple Stock: Sistema de Controle de Estoque Inteligente",
+    description:
+      "Desenvolvemos uma plataforma completa de gestão de inventário que transformou a maneira como empresas controlam seus estoques. O Purple Stock oferece eficiência e precisão para empresas inovadoras.",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-09%20at%2000.22.09-YNn8QD69yFRRsa25dzCPHNHkbEfT5R.png",
+    logo: "/placeholder.svg?height=80&width=160",
+    slug: "purple-stock",
+    website: "https://www.purplestock.com.br",
+  },
 ]
 
 export function CaseStudies() {
@@ -68,33 +78,39 @@ export function CaseStudies() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
             <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg group">
-              <Link href={study.website} target="_blank" rel="noopener noreferrer">
-                <div className="relative aspect-video">
-                  <Image
-                    src={study.image || "/placeholder.svg"}
-                    alt={study.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-full"
-                    loader={({ src, width, quality }) => `${src}?w=${width}&q=${quality || 75}`}
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white font-medium">Visitar site</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-[#9333E9] group-hover:text-[#7928CA] transition-colors">
-                    {study.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{study.description}</p>
-                  <Button
-                    variant="link"
-                    className="text-[#9333E9] p-0 h-auto font-semibold hover:no-underline group-hover:text-[#7928CA]"
+              <div className="relative aspect-video">
+                <Image
+                  src={study.image || "/placeholder.svg"}
+                  alt={study.title}
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full"
+                  loader={({ src, width, quality }) => `${src}?w=${width}&q=${quality || 75}`}
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <Link
+                    href={study.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-medium bg-[#9333E9] px-4 py-2 rounded-md hover:bg-[#7928CA] transition-colors"
                   >
-                    Ver case completo
-                  </Button>
+                    Visitar site
+                  </Link>
                 </div>
-              </Link>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-[#9333E9] group-hover:text-[#7928CA] transition-colors">
+                  {study.title}
+                </h3>
+                <p className="text-gray-600 mb-4 line-clamp-3">{study.description}</p>
+                <Button
+                  asChild
+                  variant="link"
+                  className="text-[#9333E9] p-0 h-auto font-semibold hover:no-underline group-hover:text-[#7928CA]"
+                >
+                  <Link href={`/cases/${study.slug}`}>Ver case completo</Link>
+                </Button>
+              </div>
             </div>
           ))}
         </div>
