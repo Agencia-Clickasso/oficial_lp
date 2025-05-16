@@ -31,7 +31,7 @@ const caseStudies = [
       role: "Fundador Felix Pet",
     },
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-31%20at%2017.30.21-drwUtsf4C8MFIjc0UDLWCppWfftzHw.png",
+      "/felix.png",
   },
   {
     slug: "kefir-vitalis",
@@ -56,7 +56,7 @@ const caseStudies = [
       role: "Fundadora Kefir Vitalis",
     },
     image:
-      "https://sjc.microlink.io/UMtpRQkmU-QxzK0CbqpZpIT1FFvHRNkoDHoF5H2U_zfu7yBU6ClxTEbKbekRqtRMcjjG-j3R2AY1G-M8fJUkFw.jpeg",
+      "/kefir.png",
   },
   {
     slug: "jussara-massoterapeuta",
@@ -81,7 +81,7 @@ const caseStudies = [
       role: "Massoterapeuta",
     },
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-31%20at%2017.30.53-x7ikXvyrDss7SphbuMqKuUGvyrr6Yu.png",
+      "/jussara.png",
   },
   {
     slug: "purple-stock",
@@ -106,7 +106,31 @@ const caseStudies = [
       role: "CEO Purple Stock",
     },
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-09%20at%2000.22.09-YNn8QD69yFRRsa25dzCPHNHkbEfT5R.png",
+      "/purple.png",
+  },
+  {
+    slug: "lucas-dog-walker",
+    title: "Lucas Dog Walker: Presença digital para serviços de cuidados caninos",
+    client: "Lucas Dog Walker",
+    industry: "Serviços Pet",
+    website: "https://lucasdogwalker.com.br",
+    challenge:
+      "O Lucas Dog Walker precisava estabelecer uma presença digital profissional que destacasse sua experiência de 7 anos e os serviços especializados em cuidados com cães na Zona Leste de São Paulo.",
+    solution:
+      "Desenvolvemos um site completo com sistema de agendamento, seção de serviços detalhada, apresentação da equipe e área de atuação, além de integração com WhatsApp para facilitar o contato.",
+    results: [
+      "Aumento de 200% nos agendamentos online",
+      "Cobertura de 3 regiões principais de São Paulo",
+      "Sistema de agendamento integrado com WhatsApp",
+      "Destaque para certificações em primeiros socorros",
+    ],
+    testimonial: {
+      quote:
+        "A Clickasso transformou nossa presença digital, criando um site que reflete nossa dedicação e profissionalismo. O sistema de agendamento facilitou muito o contato com nossos clientes.",
+      author: "Lucas",
+      role: "Dog Walker & Cuidador",
+    },
+    image: "/lucas.png",
   },
 ]
 

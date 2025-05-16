@@ -19,7 +19,7 @@ const caseStudies: CaseStudy[] = [
     description:
       "A Felix Pet é referência em adestramento e comportamento canino. Desenvolvemos uma presença digital que reflete a excelência e profissionalismo da marca, resultando em um aumento significativo de leads qualificados e conversões.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-31%20at%2017.30.21-drwUtsf4C8MFIjc0UDLWCppWfftzHw.png",
+      "/felix.png",
     logo: "/placeholder.svg?height=80&width=160",
     slug: "felix-pet",
     website: "https://felixpet.com.br",
@@ -28,8 +28,7 @@ const caseStudies: CaseStudy[] = [
     title: "Kefir Vitalis: E-commerce de produtos naturais com foco em conversão",
     description:
       "A Kefir Vitalis é especializada em kefir artesanal de alta qualidade. Criamos uma estratégia digital completa que aumentou a visibilidade da marca e as vendas online, estabelecendo uma forte presença no mercado de produtos naturais.",
-    image:
-      "https://sjc.microlink.io/UMtpRQkmU-QxzK0CbqpZpIT1FFvHRNkoDHoF5H2U_zfu7yBU6ClxTEbKbekRqtRMcjjG-j3R2AY1G-M8fJUkFw.jpeg",
+    image: "/kefir.png",
     logo: "/placeholder.svg?height=80&width=160",
     slug: "kefir-vitalis",
     website: "https://kefirvitalis.com.br",
@@ -39,7 +38,7 @@ const caseStudies: CaseStudy[] = [
     description:
       "Desenvolvemos uma identidade digital profissional para a massoterapeuta Jussara, que resultou em um aumento significativo de agendamentos e reconhecimento da marca no mercado de bem-estar e saúde.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-31%20at%2017.30.53-x7ikXvyrDss7SphbuMqKuUGvyrr6Yu.png",
+      "/jussara.png",
     logo: "/placeholder.svg?height=80&width=160",
     slug: "jussara-massoterapeuta",
     website: "https://jussaramassoterapeuta.com.br",
@@ -49,10 +48,19 @@ const caseStudies: CaseStudy[] = [
     description:
       "Desenvolvemos uma plataforma completa de gestão de inventário que transformou a maneira como empresas controlam seus estoques. O Purple Stock oferece eficiência e precisão para empresas inovadoras.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-09%20at%2000.22.09-YNn8QD69yFRRsa25dzCPHNHkbEfT5R.png",
+      "/purple.png",
     logo: "/placeholder.svg?height=80&width=160",
     slug: "purple-stock",
     website: "https://www.purplestock.com.br",
+  },
+  {
+    title: "Lucas Dog Walker: Presença digital para serviços de cuidados caninos",
+    description:
+      "Desenvolvemos uma identidade digital completa para o Lucas Dog Walker, destacando seus 7 anos de experiência e serviços especializados em cuidados com cães na Zona Leste de São Paulo.",
+    image: "/lucas.png",
+    logo: "/placeholder.svg?height=80&width=160",
+    slug: "lucas-dog-walker",
+    website: "https://lucasdogwalker.com.br",
   },
 ]
 
